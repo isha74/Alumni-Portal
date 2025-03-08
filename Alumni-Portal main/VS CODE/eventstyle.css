@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #f39c12;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Section Styles */
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    background-image: url('https://thumbor-cdn.b2match.com/bCC4xgRJbRZEiT9DUJvb3WJznrk=/full-fit-in/1600x0/filters:quality(75):no_upscale()/https://www.b2match.com/img/events-site_header-image.jpg');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image within the section */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.event-card {
+    background: linear-gradient(to right, #ededc3, #f4c2e8); /* Image as background */
+    background-size: cover; /* Ensure the image covers the full card */
+    background-position: center; /* Center the background image */
+    color: rgb(0, 0, 0); /* Text color white for contrast */
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center; /* Center align text */
+}
+
+.event-card:hover {
+    transform: translateY(-5px); /* Hover effect to lift the card */
+}
+
+.event-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .event-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-card {
+        width: 80%;
+    }
+}
